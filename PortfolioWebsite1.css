@@ -1,0 +1,92 @@
+/* styles.css */
+
+/* Style the link to your homepage */
+a[href="PWhomepage.html"] {
+    margin-left: 20px; /* Add left margin for spacing */
+    margin-top: 80px; /* Add space above the link */
+    text-decoration: none; /* Remove underline from the link */
+    color: purple; /* Set the link color */
+    font-weight: bold; /* Apply bold font weight */
+    font-size: 24px; /* Increase the font size */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: cornflowerblue;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+section {
+    margin: 2rem;
+    padding: 2rem;
+    border: 1px solid #ddd;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    text-decoration: underline; /* Add underlines to section headings */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative; /* Add a relative position to list items */
+
+    /* Add bullets using before pseudo-element */
+    &:before {
+        content: "\2022"; /* Bullet character */
+        position: absolute;
+        left: 0;
+        color: #333; /* Bullet color */
+    }
+}
+
+/* Style the list items inside the Skills section */
+#skills li {
+    margin-bottom: 0.5rem;
+    padding-left: 2.5rem;
+    position: relative;
+
+    &:before {
+        content: "\2713"; /* Checkmark character */
+        position: absolute;
+        left: 0;
+        color: #4CAF50; /* Green checkmark color */
+    }
+}
+
+/* Style the footer with a highlight background color and icons */
+footer {
+    text-align: center;
+    background-color: plum; /* Yellow highlight background color */
+    color: #333;
+    padding: 1rem 0;
+}
+
+/* Add icons to the footer */
+footer::before {
+    content: "\1F4E7"; /* Envelope icon Unicode character */
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
