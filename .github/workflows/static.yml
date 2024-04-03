@@ -21,16 +21,16 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-jobs:
-  # Single deploy job since we're just deploying
+# jobs:
+#   # Single deploy job since we're just deploying
 
-  name: Build
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    types: [opened, synchronize, reopened]
+#   name: Build
+# on:
+#   push:
+#     branches:
+#       - main
+#   pull_request:
+#     types: [opened, synchronize, reopened]
 jobs:
   sonarcloud:
     name: SonarCloud
