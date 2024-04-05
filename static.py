@@ -13,7 +13,7 @@ driver.get("https://1preeti6.github.io/My_Portfolio_Website_Project/")  # Update
 time.sleep(2)  # Adding a delay to see the result
 
 # Assert some condition to verify the result
-assert "Designer Creative thinker" in driver.title
+assert "Your Name - Portfolio" in driver.title
 
 # Take a screenshot
 timestamp = time.strftime("%Y%m%d-%H%M%S")
